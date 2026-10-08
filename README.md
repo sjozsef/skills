@@ -12,6 +12,7 @@ They are inspired by and mostly taken from [Matt Pocock's skills](https://github
 | `to-spec` | `to-spec` | Saves the spec to `.scratch/tasks/<task-slug>/spec.md` instead of an issue tracker. |
 | `to-tickets` | `to-tickets` | Writes one file per ticket to `.scratch/tasks/<task-slug>/tickets/<NN>-<slug>.md`. No tracker, no status labels. |
 | `implement` | `implement` | No `tdd`, no automatic `code-review`, no commit. Adds a rule not to widen the scope. |
+| `handoff` | `handoff` | None, taken verbatim. |
 
 ## Task files
 
@@ -27,5 +28,5 @@ Pass the task slug (or a spec path) when invoking a skill; if none is given, the
 Copy the skill folders into the harness's global skills directory, e.g. for Claude Code:
 
 ```sh
-cp -r grill-me to-spec to-tickets implement ~/.claude/skills/
+cp -r grill-me to-spec to-tickets implement handoff ~/.claude/skills/
 ```
